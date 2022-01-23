@@ -23,5 +23,10 @@ $(document).ready(function () {
     function hourTracker () {
         //collect current hours
         var currentHour = moment().hour();
+
+        //time block loops
+        $(".time-block").each(function () {
+            var blockHour = parseInt($(this).attr("id").split("hour")[1]);
+        })
     }
 })
