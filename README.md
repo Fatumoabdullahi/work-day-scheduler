@@ -17,3 +17,4 @@ WHEN I refresh the page
 THEN the saved events persist
 
 # screenshot
+<figure><img src=./assets/planner></figure>
