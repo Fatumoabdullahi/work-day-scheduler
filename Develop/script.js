@@ -27,6 +27,23 @@ $(document).ready(function () {
         //time block loops
         $(".time-block").each(function () {
             var blockHour = parseInt($(this).attr("id").split("hour")[1]);
+            console.log( blockHour, currentHour)
+
+            if (blockHour < currentHour) {
+                $(this).addClass("past");
+                $(this).addClass("future");
+                $(this).addClass("present");
+            }
+            else if (blockHour === currentHour) {
+                $(this).removeClass("past");
+                $(this).removeClass("future");
+                $(this).removeClass("present");
+            }
+            else {
+                $(this).removeClass("present");
+                $(this).removeClass("past");
+                $(this).addClass("future");
+            }
         })
     }
 })
