@@ -16,5 +16,5 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 
-# screenshot
-<figure><img src=./assets/planner></figure>
+# Screenshot
+<figure><img src=./assets/images/planner.png></figure>
